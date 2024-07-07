@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice of lesson one and two java script</title>
+  </head>
+  <body>
+    <!--this is a practice of alert,how to console dot log in java script,how to make use of dollar sign in calculation and that of math dot round, input amount and how to make use of let -->
+    <button
+      onclick="
+      alert('your name can be seen on the console, thank you')
+      console.log('what is your name');
+      console.log(`my_name_is: ${'ambrose jane'}`);"
+    >
+      Name
+    </button>
+
+    <button onclick="
+    console.log(`totalCost: ${totalCost}`);
+    ">
+      TotalCost
+    </button>
+
+
+    <!--this is an example of how to add to you cat(${1+(1)})  -->
+    <button
+      onclick="
+      totalCost = totalCost + 150
+       console.log(`totalCost: ${totalCost}`);
+       // console.log(`bangle (${1+(1)}): $${150 + 150}`)(another way to console an item)
+       alert('selected accessory');"
+    >
+      Bangels
+    </button>
+
+    <button
+      onclick="
+      totalCost = totalCost + 80
+      console.log(`totalCost: ${totalCost}`);
+      alert('selected food')
+      //console.log(`soup (${1+(1)};): $${80 + 80}`);"
+    >
+      soup
+    </button>
+
+    <button
+      onclick="
+      totalCost = totalCost + 60
+      console.log(`totalCost: ${totalCost}`);
+      alert('selected beverage')
+      //console.log(`coffee (${+ 1+(1) }):$${((60)+(1))}`);"
+    >
+      Coffee
+    </button>
+
+    <!--<button
+      onclick="
+      alert('total cost of items')
+      console.log(`totalcost (${1 + (1) + (1)}): $${Math.round((300+160+120) * 0.5) / 100}`);"
+    >
+      Cost
+    </button>-->
+
+    <button
+      onclick="
+      totalCost = 0;
+      console.log(`cart was reset`);
+      console.log(`totalCost: ${totalCost}`);
+    "
+    >
+      Reset
+    </button>
+
+    <!--<button
+      onclick="
+      alert('an item has been removed from cart')
+      //totalCost -=1;
+      console.log(`totalcost (${(1) + (1) + (1) -1}): $${Math.min((300+160+120-1) * 0.5) / 100}`)
+      console.log(`totalCost: ${totalCost}`);
+    "
+    >
+      Remove from cart
+    </button> -->
+
+    <script>
+      let my_name_is = "ambrose jane";
+      let totalCost = 0;
+    </script>
+  </body>
+</html>
